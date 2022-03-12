@@ -27,13 +27,15 @@ android {
     }
 }
 
-repositories {
-    google()
-    mavenCentral()
-    maven {
-        url "https://android-sdk.is.com/"
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+        maven {
+            url "https://android-sdk.is.com/"
+        }
+        maven { url "https://s3.amazonaws.com/smaato-sdk-releases/" }
     }
-    maven { url "https://s3.amazonaws.com/smaato-sdk-releases/" }
 }
 
 dependencies {
